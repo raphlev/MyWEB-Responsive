@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: black; /* rgb(0,0,0) or #000 */
+  font-size: 27px;
+  font-weight: 0;
+  font-family: "Laila", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  transition: 1s;
+}
+
+a:hover {
+  color: red;
+}
+
+h2 {
+  color: black;
+  font-family: "Lobster", cursive;
+}
+
+h3 {
+  margin-block-end: 2em;
+}
+
+#hero {
+  background: url("https://github.com/raphlev/Oh-My-Site/raw/master/images/fond.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%; /*pour prendre en compte la marge du bas*/
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 20px;
+}
+#bandeau {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#contenu {
+  text-align: center;
+  padding: 2%;
+}
+
+#contenu a {
+  color: red;
+  border: 1px solid red;
+  border-radius: 15px;
+  padding: 20px;
+  transition: ease 1s;
+}
+
+html {
+  font-family: "arial";
+  font-size: 16px;
+}
+
+#contenu a:hover {
+  color: white;
+  background-color: rgba(178, 32, 19, 0.8);
+}
+
+#contenu img:hover {
+  transform: rotate(360deg) scale(1.5);
+}
+
+#contenu img {
+  transition: 0.2s;
+}
+
+#apropos {
+  display: flex;
+}
+
+#apropos_image {
+  padding: 20px;
+  flex: 1;
+}
+
+#apropos_image img {
+  flex: 1;
+  max-width: 100%; /*L'image prend au maximum la largeur de son contenant, soit 100% du tiers de page*/
+}
+
+#apropos_texte {
+  padding: 20px;
+  flex: 2;
+  text-align: justify;
+}
+
+#services {
+  display: flex;
+  background-color: #666;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.services_item p {
+  text-align: justify;
+  padding: 20px;
+}
+
+#lead {
+  display: flex;
+  justify-content: center;
+  background-color: #e74c3c;
+  color: white;
+}
+
+#lead h2 {
+  color: white;
+}
+
+.form {
+  padding: 20px;
+}
+
+#mce-success-response {
+  color: white !important;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  color: #e74c3c;
+}
+
+.social {
+  padding: 20px;
+}
+
+.modal {
+  display: none; /*Cache par defaut*/
+  position: fixed;
+  left: 0; /*Sans marge a gauche*/
+  top: 0; /*Sans marge en haut*/
+  background-color: rgba(243, 235, 72, 0.76);
+  height: 100%; /* Pleine hauteur */
+  width: 100%; /* Pleine largeur */
+  z-index: 1; /* Se place au—dessus */
+  /* Pour pouvoir faire defiler le contenu */
+  overflow: auto;
+}
+
+/* Le Bloc Central*/
+.modalBloc {
+  margin: 10% auto;
+  padding: 20px;
+  width: 50%;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border-top: 10px solid black;
+}
+
+.modalBtn {
+  margin: 5%;
+}
+
+.modalBtn a {
+  color: white;
+  background-color: black;
+}
+
+.modalBtn a:hover {
+  opacity: 0.7;
+}
+
+.modalTextTitle {
+  font-size: 60px;
+  font-family: "Lobster", cursive;
+}
+
+.modalTextSubtitle {
+  font-size: 20px;
+}
+
+.modalText img {
+  width: 60%;
+}
+
+@media screen and (max-width: 414px) {
+  #apropos {
+    flex-direction: column;
+  } /* Ici, on referme la declaration #apropos*/
+  #services {
+    flex-direction: column;
+  } /* Ici, on referme la declaration #services*/
+  nav a {
+    display: block;
+    padding: 10px;
+  } /* ici, on referme la declaration nav a*/
+  .modalTextTitle {
+    font-size: 40px;
+  }
+  .modalBtn a {
+    display: block;
+    margin-bottom: 5%;
+  }
+}
