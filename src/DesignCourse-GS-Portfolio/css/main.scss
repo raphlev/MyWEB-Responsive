@@ -51,7 +51,7 @@ header {
 .hero {
     background: #6E00FF;
     color: white;
-    display: grid;
+    display: grid; /** grid or flex can be used here _ to center item */
     text-align: center;
     padding: 4em;
 }
@@ -131,7 +131,7 @@ section {
 
     .icon-container {
         height: 100px;
-        display: grid;
+        display: grid; /** grid or flex can be used here _ to center item */
         place-content: center;
         margin: 0 auto;
 
